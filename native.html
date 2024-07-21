@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Native Objects in JavaScript</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+    h2 {
+      margin-top: 0;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Native Objects in JavaScript</h2>
+    <ul>
+      <li>Array: <script>document.write(Array.isArray([]));</script></li>
+      <li>Boolean: <script>document.write(typeof true === 'boolean');</script></li>
+      <li>Date: <script>document.write(Object.prototype.toString.call(new Date()) === '[object Date]');</script></li>
+      <li>Error: <script>document.write(new Error() instanceof Error);</script></li>
+      <li>Function: <script>document.write(typeof function(){} === 'function');</script></li>
+      <li>Math: <script>document.write(typeof Math === 'object');</script></li>
+      <li>Number: <script>document.write(typeof 42 === 'number');</script></li>
+      <li>Object: <script>document.write(typeof {} === 'object');</script></li>
+      <li>RegExp: <script>document.write(Object.prototype.toString.call(/regex/) === '[object RegExp]');</script></li>
+      <li>String: <script>document.write(typeof 'hello' === 'string');</script></li>
+    </ul>
+  </div>
+</body>
+</html>

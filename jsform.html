@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>validate form
+</title>
+</head>
+<body>
+<script>
+
+function mydata()
+{
+var a=document.getElementById("n1").value;
+var b=document.getElementById("n2").value;
+var c=document.getElementById("n3").value;
+
+if(a==""||b==""||c=="")
+{
+alert("all fields are mendatory");
+return false;
+}
+else if (!phonenumber.match(/^[89]/)){
+alert("phone number must start with 8 or 9");
+return false;
+}
+else
+{
+alert("tnaks for submission");
+}
+}
+</script>
+<form>
+username: <input type="text" id="n1">
+<br>
+<br>
+password: <input type="password" id="n2"><br>
+MobileNo: <input type="number" id="n3"><br><br>
+<input type ="submit" value="login" onclick="mydata()">
+</form>
+</body>
+<html>
